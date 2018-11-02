@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ITGE2017_RIO"
+  config.vm.box = "abhi18av/ITGE2017_RIO"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
