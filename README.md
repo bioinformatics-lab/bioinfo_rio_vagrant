@@ -22,11 +22,3 @@ A vagrant version of the amazing ITGE2017 analysis machine
 ## Step 5
 - Setup the ITGE2017 vagrant box
 
-
-```
-Vagrant.configure("2") do |config|
-  config.vm.box = "abhi18av/ITGE2017_RIO"
-  config.vm.box_version = "0.0.1"
-end
-```
- 
