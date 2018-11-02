@@ -39,5 +39,5 @@ wget http://download.virtualbox.org/virtualbox/5.2.0/Oracle_VM_VirtualBox_Extens
 VBoxManage extpack install ./Oracle_VM_VirtualBox_Extension_Pack-5.2.0-118431.vbox-extpack
 
 
-# mound guest additions to guest
-vboxmanage storageattach "IE9 - Win7" --storagectl "IDE" --port 1 --device 0 --type dvddrive --medium /usr/share/virtualbox/VBoxGuestAdditions.iso
+# TODO mount guest additions to guest
+vboxmanage storageattach "ubuntu" --storagectl "IDE" --port 1 --device 0 --type dvddrive --medium /usr/share/virtualbox/VBoxGuestAdditions.iso
