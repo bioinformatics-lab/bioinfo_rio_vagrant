@@ -6,7 +6,7 @@ done
 echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 
-# allow us to make a kernel
+# allows us to make a kernel
 apt-get install unzip build-essential libssl-dev -y
 arch="$(uname -m)"
 release="$(uname -r)"
@@ -24,7 +24,7 @@ zcat /proc/config.gz > /usr/src/linux/.config
 printf 'CONFIG_LOCALVERSION="%s"\nCONFIG_CROSS_COMPILE=""\n' "${local:+-$local}" >> /usr/src/linux/.config
 wget -O /usr/src/linux/Module.symvers "http://mirror.scaleway.com/kernel/${arch}/${release}/Module.symvers"
 
-# make kernel (no idea why? but anyway)
+# Make kernel 
 
 NUM_CORES=$(cat /proc/cpuinfo|grep vendor_id|wc -l)
 make -j${NUM_CORES} -C /usr/src/linux prepare modules_prepare
