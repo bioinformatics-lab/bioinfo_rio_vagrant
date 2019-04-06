@@ -1,5 +1,3 @@
-https://linuxconfig.org/install-virtualbox-on-ubuntu-18-04-bionic-beaver-linux
-
 ## Find out which flavor of linux
 
 ```
@@ -1352,7 +1350,65 @@ admin
 
 nix-env -iA nixpkgs.nvim
 
-## install openjdk8
+
+## install ocaml
 
 
 
+## Now we need to translate all the scala scripts into OCaml/Ruby and rely on nextflow
+
+
+```
+nix-env -iA nixpkgs.opam
+
+opam init --disable-sandboxing
+
+```
+
+opam install utop
+opam install base core 
+opam install containers
+opam install ctypes ctypes-foreign
+opam install yojson
+opam install tls ssl
+opam install cohttp lwt
+opam install lwt_ssl
+opam install lambdasoup
+opam install sqlite3
+opam install qcheck
+opam install alcotest
+opam install shcaml
+opam install genspio
+
+
+
+## Setup python3Full using nix-env
+
+
+## Setup miniconda3
+
+```
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+
+./Miniconda3-latest-Linux-x86_64.sh
+
+
+```
+
+
+## Setup the Xonsh shell
+
+```
+sudo apt install python3-pip
+sudo apt-get install python3-setuptools
+pip3 install xonsh
+
+ NOTE: Unable to install pip3 using nix
+
+```
+
+```
+pip3 install xonsh
+```
