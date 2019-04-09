@@ -22,3 +22,8 @@ A vagrant version of the amazing ITGE2017 analysis machine
 ## Step 5
 - Setup the ITGE2017 vagrant box
 
+
+
+# TODO  - install ncbi blast
+
+https://github.com/enormandeau/ncbi_blast_tutorial
