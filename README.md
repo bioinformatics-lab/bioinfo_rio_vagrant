@@ -27,3 +27,9 @@ A vagrant version of the amazing ITGE2017 analysis machine
 # TODO  - install ncbi blast
 
 https://github.com/enormandeau/ncbi_blast_tutorial
+
+
+```
+cp -a ncbi-blast-2.9.0+ /opt/
+export PATH="/opt/ncbi-blast-2.9.0+/bin/":$PATH
+```
