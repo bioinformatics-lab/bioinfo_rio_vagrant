@@ -35,3 +35,12 @@ export PATH="/opt/ncbi-blast-2.9.0+/bin/":$PATH
 ```
 
 ## TODO - i must make sure that I execute all the commands as a `centos` user 
+
+
+## maybe I could just completely elevate the `centos` user as `root`
+https://www.shellhacks.com/how-to-grant-root-access-user-root-privileges-linux/
+
+```
+[centos@localhost vagrant]$ grep centos /etc/passwd
+centos:x:1000:1000:centos:/home/centos:/bin/bash
+```
