@@ -44,3 +44,7 @@ https://www.shellhacks.com/how-to-grant-root-access-user-root-privileges-linux/
 [centos@localhost vagrant]$ grep centos /etc/passwd
 centos:x:1000:1000:centos:/home/centos:/bin/bash
 ```
+
+# tried deleting the password for elevated `centos`
+https://www.cyberciti.biz/faq/linux-delete-user-password/
+https://www.cyberciti.biz/faq/linux-delete-user-password/
