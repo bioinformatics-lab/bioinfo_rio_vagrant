@@ -8,8 +8,9 @@ VBoxManage unregistervm --delete
 
 ```
 
+# v0.0.01
 
-# Vagrant init
+### Vagrant init
 
 ```
 
@@ -22,20 +23,20 @@ vagrant up
 
 
 
-# download the working Vagrantfile 
+### download the working Vagrantfile 
 
 ```
 wget https://github.com/BioDragao/ITGE2017_RIO_vagrant/blob/master/firstTimeSetup/biodragon_Vagrantfile -o Vagrantfile
 
 ```
 
-### In this file the following settings need to be noted
+##### In this file the following settings need to be noted
 - login via `centos` always so that vagrant has a chance to setup the `ssh` keys
 - increase the `wait_time` to around `600` minutes
 
 - the installation of `vbguest` required me to login via the `root` user
 
-# Now we run `vagrant up`
+### Now we run `vagrant up`
 
 
 ```
@@ -298,9 +299,9 @@ The error output from the command was:
 
 - The `vbguest installation process` will fail as shown above.
 
-## vagrant halt 
+#### vagrant halt 
 
-## vagrant up
+#### vagrant up
 
 ```
 root@vaani /biodragon/vagrantBox master # vagrant up
@@ -331,5 +332,137 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ```
 
 
-## now I can login and use the installed `vbguest` using `/vagrant` 
+### now I can login and use the installed `vbguest` using `/vagrant` 
 
+
+# v1.0.0
+
+```
+
+root@vaani /biodragon/vagrantBox master # vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'abhi18av/ITGE2017_RIO' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: 1.0.0
+==> default: Loading metadata for box 'abhi18av/ITGE2017_RIO'
+    default: URL: https://vagrantcloud.com/abhi18av/ITGE2017_RIO
+==> default: Adding box 'abhi18av/ITGE2017_RIO' (v1.0.0) for provider: virtualbox
+    default: Downloading: https://vagrantcloud.com/abhi18av/boxes/ITGE2017_RIO/versions/1.0.0/providers/virtualbox.box
+    default: Download redirected to host: vagrantcloud-files-production.s3.amazonaws.com
+==> default: Successfully added box 'abhi18av/ITGE2017_RIO' (v1.0.0) for 'virtualbox'!
+==> default: Importing base box 'abhi18av/ITGE2017_RIO'...
+==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: vagrantBox_default_1554988212808_3651
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: centos
+    default: SSH auth method: password
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+[default] GuestAdditions 5.2.18 running --- OK.
+==> default: Checking for guest additions in VM...
+==> default: Mounting shared folders...
+    default: /vagrant => /biodragon/vagrantBox
+
+root@vaani /biodragon/vagrantBox master # vagrant ssh
+==> default: The machine you're attempting to SSH into is configured to use
+==> default: password-based authentication. Vagrant can't script entering the
+==> default: password for you. If you're prompted for a password, please enter
+==> default: the same password you have configured in the Vagrantfile.
+centos@127.0.0.1's password:
+Last login: Thu Apr 11 18:45:34 2019
+[centos@localhost ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+root@vaani /biodragon/vagrantBox master # vagrant ssh
+==> default: The machine you're attempting to SSH into is configured to use
+==> default: password-based authentication. Vagrant can't script entering the
+==> default: password for you. If you're prompted for a password, please enter
+==> default: the same password you have configured in the Vagrantfile.
+centos@127.0.0.1's password:
+Last login: Thu Apr 11 19:53:14 2019 from gateway
+[centos@localhost ~]$ echo $PATH
+/opt/Rexe:/opt/velvet-stats:/opt/Bandage:/opt/velvet/contrib/VelvetOptimiser-2.2.4:/opt/snippy/bin:/opt/snippy/binaries/linux/:/opt/snippy/binaries/noarch:/opt/bcftools/misc:/opt/Trimmomatic-0.36:/opt/artemis:/opt/bcftools:/opt/bwa:/opt/htslib:/opt/GenomeAnalysisTK-3.8-0-ge9d806836:/opt/samtools:/opt/Trimmomatic-0.36:/opt/FastQC:/opt/seaview:/opt/jmodeltest2-2.1.9r20160115/dist:/opt/velvet:/opt/SPAdes-3.10.1-Linux/bin:/opt/prokka/bin:/opt/prokka/binaries/common:/opt/prokka/binaries/linux:/opt/PAGIT/bin/:/opt/PAGIT/bin/pileup_v0.5/:/opt/PAGIT/bin/pileup_v0.5/ssaha2:/opt/PAGIT/bin/pileup_v0.5/:/opt/PAGIT/IMAGE/:/opt/PAGIT/ABACAS:/opt/PAGIT/ICORN/:/opt/PAGIT/RATT/:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/centos/.local/bin:/home/centos/bin
+[centos@localhost ~]$
+
+
+
+
+
+
+
+
+
+
+[centos@localhost ~]$ su -
+Password:
+Last login: Fri Sep 15 07:25:48 IST 2017 on pts/0
+ABRT has detected 12 problem(s). For more info run: abrt-cli list --since 1505440548
+[root@localhost ~]# exit
+logout
+[centos@localhost ~]$ sudo shutdown -h now
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+root@vaani /biodragon/vagrantBox master # vagrant up
+
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: centos
+    default: SSH auth method: password
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+[default] GuestAdditions 5.2.18 running --- OK.
+==> default: Checking for guest additions in VM...
+==> default: Mounting shared folders...
+    default: /vagrant => /biodragon/vagrantBox
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+root@vaani /biodragon/vagrantBox master # vagrant ssh
+==> default: The machine you're attempting to SSH into is configured to use
+==> default: password-based authentication. Vagrant can't script entering the
+==> default: password for you. If you're prompted for a password, please enter
+==> default: the same password you have configured in the Vagrantfile.
+centos@127.0.0.1's password:
+Last login: Thu Apr 11 20:06:56 2019
+[centos@localhost ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+root@vaani /biodragon/vagrantBox master # vagrant halt
+==> default: Attempting graceful shutdown of VM...
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+                                                                               
+
+```
