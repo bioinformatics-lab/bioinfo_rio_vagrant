@@ -336,6 +336,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 
 
 # v1.0.0
+TODO : properly explain the results from below 
 
 ```
 
@@ -401,9 +402,10 @@ Last login: Thu Apr 11 19:53:14 2019 from gateway
 
 
 
+```
 
 
-
+```
 
 
 
@@ -463,6 +465,6 @@ root@vaani /biodragon/vagrantBox master # vagrant halt
     default: Inserting generated public key within guest...
     default: Removing insecure key from the guest if it's present...
     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-                                                                               
+root@vaani /biodragon/vagrantBox master #
 
 ```
