@@ -47,4 +47,9 @@ centos:x:1000:1000:centos:/home/centos:/bin/bash
 
 # tried deleting the password for elevated `centos`
 https://www.cyberciti.biz/faq/linux-delete-user-password/
-https://www.cyberciti.biz/faq/linux-delete-user-password/
+
+# building a box from scratch
+https://medium.com/@gajbhiyedeepanshu/building-custom-vagrant-box-e6a846b6baca
+https://www.engineyard.com/blog/building-a-vagrant-box-from-start-to-finish
+https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one
+
