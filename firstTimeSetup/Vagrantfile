@@ -8,18 +8,18 @@ Vagrant.configure("2") do |config|
   config.vm.box_check_update = false
 
 
-  # config.vm.synced_folder "/Users/eklavya/projects/code/sys-admin/_resources/vagrant-boxes/ITGE2017_RIO/synced_data", "/home/centos/Deskto
-p/synced_data"
+  # config.vm.synced_folder "/Users/eklavya/projects/code/sys-admin/_resources/vagrant-boxes/ITGE2017_RIO/synced_data", "/home/centos/Desktop/synced_data"
 
   config.vm.provider "virtualbox" do |vb|
      vb.gui = false
-     vb.memory = "4096"
-     vb.cpus = "4"
+     vb.memory = "8192"
+     vb.cpus = "6"
    end
 
-  #config.ssh.username="centos"
-  config.ssh.username="root"
-  #config.vm.boot_timeout=20
+  #config.ssh.username="root"
+
+  config.ssh.username="centos"
+  config.vm.boot_timeout=30
   #abhi18av NOTE : after entering the password for the first time we simply use the SSH
   config.ssh.password="reverse"
 
