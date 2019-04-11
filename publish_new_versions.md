@@ -2,6 +2,7 @@
 
 Resources  
 https://github.com/abhi18av/sys-admin/blob/276399251b917aeb5dd8a4286489ddcb10ab26ba/servers/biodragon.md
+https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4
 
 ### Halt the current running box 
 
