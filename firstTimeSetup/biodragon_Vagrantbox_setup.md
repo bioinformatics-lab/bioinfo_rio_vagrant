@@ -1,3 +1,14 @@
+# delete previous vagrant boxes
+
+
+```
+vagrant box remove abhi18av/ITGE2017_RIO 
+VBoxManage list vms
+VBoxManage unregistervm --delete
+
+```
+
+
 # Vagrant init
 
 ```
