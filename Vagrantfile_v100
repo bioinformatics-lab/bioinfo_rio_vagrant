@@ -1,0 +1,33 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "abhi18av/ITGE2017_RIO"
+  config.vm.box_version = "1.0.0"
+  config.vm.box_check_update = false
+
+
+  config.vm.provider "virtualbox" do |vb|
+     vb.gui = false
+     vb.memory = "8192"
+     vb.cpus = "6"
+   end
+
+
+  config.vm.boot_timeout=900
+
+  #NOTE : after entering the password for the first time we simply use the SSH
+  #config.ssh.username="root"
+
+  config.ssh.username="centos"
+  config.ssh.password="reverse"
+
+
+#  config.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: "~/.ssh/me.pub"
+#  config.vm.synced_folder "/biodragon/vagrantBox", "/vagrant"
+
+
+
+    config.vbguest.auto_update = true
+end
