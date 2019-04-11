@@ -29,3 +29,4 @@ curl -X PUT --upload-file ITGE2017_RIO.box $OBTAINED_URL
 ```
 curl 'https://vagrantcloud.com/api/v1/box/abhi18av/ITGE2017_RIO/version/0.0.1/provider/virtualbox?access_token=nuZUUrYz4mcPjg.atlasv1.TAQrhudtGyycYioN1eh2A0kXb2bGAO7yrmLpgh0fHOwPvEBYyOSUhFtx9Iv0QMcBxN8'
 ```
+### Go to the web dashboard and manuall release the box
