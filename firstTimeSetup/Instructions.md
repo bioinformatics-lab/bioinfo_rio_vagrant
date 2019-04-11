@@ -1,5 +1,7 @@
 Here is the series of steps I've followed to setup `ITGE2017` vagrant image in `Vaani` server.
 
+- Always prefer using the `centos` as the ssh user
+
 
 - Install guest addition on host 
 https://linuxconfig.org/install-virtualbox-on-ubuntu-18-04-bionic-beaver-linux
