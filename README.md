@@ -27,26 +27,13 @@ A vagrant version of the amazing ITGE2017 analysis machine
 # TODO  - install ncbi blast
 
 https://github.com/enormandeau/ncbi_blast_tutorial
-
-
 ```
+aria2c ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64-linux.tar.gz
+
 cp -a ncbi-blast-2.9.0+ /opt/
 export PATH="/opt/ncbi-blast-2.9.0+/bin/":$PATH
-```
-
-## TODO - i must make sure that I execute all the commands as a `centos` user 
-
-
-## maybe I could just completely elevate the `centos` user as `root`
-https://www.shellhacks.com/how-to-grant-root-access-user-root-privileges-linux/
 
 ```
-[centos@localhost vagrant]$ grep centos /etc/passwd
-centos:x:1000:1000:centos:/home/centos:/bin/bash
-```
-
-# tried deleting the password for elevated `centos`
-https://www.cyberciti.biz/faq/linux-delete-user-password/
 
 # building a box from scratch
 https://medium.com/@gajbhiyedeepanshu/building-custom-vagrant-box-e6a846b6baca
