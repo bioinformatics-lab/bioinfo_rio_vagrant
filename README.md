@@ -27,8 +27,17 @@ A vagrant version of the amazing ITGE2017 analysis machine
 # TODO  - install ncbi blast for v2.0.0
 
 https://github.com/enormandeau/ncbi_blast_tutorial
+
+Download link
 ```
-aria2c ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64-linux.tar.gz
+ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64-linux.tar.gz
+```
+
+setup commands
+```
+
+rclone copy onedrive-em:ncbi_blast_2.9.0_x64_linux.tar.gz ncbi_blast_2.9.0_x64_linux.tar.gz
+
 tar -xvzf ncbi-blast-2.9.0+-x64-linux.tar.gz
 
 cp -a ncbi-blast-2.9.0+ /opt/
