@@ -34,12 +34,18 @@ ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64
 ```
 
 setup commands
+
+- From Host
 ```
 
-rclone copy onedrive-em:ncbi_blast_2.9.0_x64_linux.tar.gz ncbi_blast_2.9.0_x64_linux.tar.gz
+rclone copy onedrive-em:ncbi_blast_2.9.0_x64_linux.tar.gz ./
 
-tar -xvzf ncbi-blast-2.9.0+-x64-linux.tar.gz
+tar -xvzf ncbi_blast_2.9.0_x64_linux.tar.gz 
 
+```
+- From Guest
+
+```
 cp -a ncbi-blast-2.9.0+ /opt/
 
 # add this to the .bashrc
