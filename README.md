@@ -46,6 +46,8 @@ tar -xvzf ncbi_blast_2.9.0_x64_linux.tar.gz
 - From Guest
 
 ```
+cd /vagrant/
+sudo cp -a ncbi-blast-2.9.0+ /opt/
 cp -a ncbi-blast-2.9.0+ /opt/
 
 # add this to the .bashrc
