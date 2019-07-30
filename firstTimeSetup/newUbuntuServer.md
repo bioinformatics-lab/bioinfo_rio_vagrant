@@ -17,7 +17,7 @@ apt install vagrant
 # now move to the destination folder and start the vm 
 
 ```
-mkdir -r /biodragon/vagrantBox
+mkdir -p /biodragon/vagrantBox
 cd /biodragon/vagrantBox
 wget https://raw.githubusercontent.com/BioDragao/ITGE2017_RIO_vagrant/master/Vagrantfile_v100 -O Vagrantfile
 vagrant up
