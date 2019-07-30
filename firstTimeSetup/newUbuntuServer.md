@@ -19,7 +19,7 @@ apt install vagrant
 ```
 mkdir -r /biodragon/vagrantBox
 cd /biodragon/vagrantBox
-wget ...
+wget https://raw.githubusercontent.com/BioDragao/ITGE2017_RIO_vagrant/master/Vagrantfile_v100 -O Vagrantfile
 vagrant up
 vagrant ssh
 vagrant halt
