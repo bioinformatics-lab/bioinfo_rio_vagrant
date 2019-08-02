@@ -66,6 +66,7 @@ export PATH="/opt/ncbi-blast-2.9.0+/bin/":$PATH
 - Inside the guest machine 
 
 ```sh
+sudo yum install python-devel 
 wget https://github.com/kvarq/kvarq/archive/master.zip
 unzip master.zip
 rm master.zip
