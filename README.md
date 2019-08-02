@@ -72,6 +72,8 @@ unzip master.zip
 rm master.zip
 cd kvarq-master
 python setup.py test
+python setup.py install
+
 ```
 
 
