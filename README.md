@@ -1,16 +1,21 @@
 # ITGE2017_RIO_vagrant
 A vagrant version of the amazing ITGE2017 analysis machine
 
+
+
+
 # Setup Instruction
 
+# Digital Ocean
+- Things work fine by default
+
+# Scaleway
 - Provider : Scaleway
 - OS : Ubuntu Xenial 16.04 
 - Architecture : x86_64
 
-## Step 1
+## Steps on Scaleway
 - Build Kernel
-
-## Step 2
 - Setup virtualbox
 
 ## Step 3
@@ -54,6 +59,22 @@ cp -a ncbi-blast-2.9.0+ /opt/
 export PATH="/opt/ncbi-blast-2.9.0+/bin/":$PATH
 
 ```
+
+
+## KVARQ SETUP
+
+- Inside the guest machine 
+
+```sh
+wget https://github.com/kvarq/kvarq/archive/master.zip
+unzip master.zip
+rm master.zip
+cd kvarq-master
+python setup.py test
+```
+
+
+
 
 # building a box from scratch
 https://medium.com/@gajbhiyedeepanshu/building-custom-vagrant-box-e6a846b6baca
