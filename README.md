@@ -76,6 +76,7 @@ sudo python setup.py install
 
 ```
 
+## Change the default init directory to `/vagrant/` for the `vagrant ssh` in host.
 
 
 
