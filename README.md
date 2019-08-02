@@ -29,6 +29,7 @@ A vagrant version of the amazing ITGE2017 analysis machine
 
 
 
+
 # TODO  - install ncbi blast for v2.0.0
 
 https://github.com/enormandeau/ncbi_blast_tutorial
@@ -59,6 +60,14 @@ cp -a ncbi-blast-2.9.0+ /opt/
 export PATH="/opt/ncbi-blast-2.9.0+/bin/":$PATH
 
 ```
+## SPOTYPING SETUP
+
+
+https://github.com/xiaeryu/SpoTyping-v2.0
+
+## RD ANALYZER SETUP
+
+https://github.com/xiaeryu/RD-Analyzer
 
 
 ## KVARQ SETUP
