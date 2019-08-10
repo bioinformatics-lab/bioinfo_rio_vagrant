@@ -43,6 +43,7 @@ setup commands
 
 - From Host
 ```
+cd /biodragon/vagrantBox/
 
 rclone copy onedrive-em:ncbi_blast_2.9.0_x64_linux.tar.gz ./
 
