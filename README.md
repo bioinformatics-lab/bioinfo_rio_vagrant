@@ -104,3 +104,12 @@ https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-on
 vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
 
 ```
+
+- Add an existing box 
+
+```
+vagrant box add my-box name-of-the-box.box
+vagrant init my-box
+vagrant up
+
+```
