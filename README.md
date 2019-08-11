@@ -92,6 +92,15 @@ sudo python setup.py install
 
 # building a box from scratch
 https://medium.com/@gajbhiyedeepanshu/building-custom-vagrant-box-e6a846b6baca
+
 https://www.engineyard.com/blog/building-a-vagrant-box-from-start-to-finish
+
 https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one
 
+
+- Command to remove all the vagrant boxes 
+
+```
+vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
+
+```
