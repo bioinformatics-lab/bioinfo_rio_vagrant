@@ -1,7 +1,8 @@
 # ITGE2017_RIO_vagrant
 A vagrant version of the amazing ITGE2017 analysis machine
 
-
+The published vagrant box can be found at 
+https://app.vagrantup.com/abhi18av/boxes/ITGE2017_RIO 
 
 
 # Setup Instruction
