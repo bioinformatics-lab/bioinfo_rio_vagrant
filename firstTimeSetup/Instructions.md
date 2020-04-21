@@ -77,3 +77,7 @@ root@vaani /biodragon # vagrant halt
 ==> default: Forcing shutdown of VM... 
 
 ```
+
+```
+https://superuser.com/questions/307853/permission-denied-when-accessing-virtualbox-shared-folder-when-member-of-the-vbo
+```
