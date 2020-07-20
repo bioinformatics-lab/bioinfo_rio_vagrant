@@ -4,6 +4,9 @@ A vagrant version of the amazing ITGE2017 analysis machine
 The published vagrant box can be found at 
 https://app.vagrantup.com/abhi18av/boxes/ITGE2017_RIO 
 
+For desktop setup, refer 
+https://linuxhint.com/mount_vmware_shares_command_line_linux_vm/
+
 
 # Setup Instruction
 
